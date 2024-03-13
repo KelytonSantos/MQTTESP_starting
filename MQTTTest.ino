@@ -34,19 +34,3 @@ void loop() {
 
 	delay(500);
 }
-
-void reconnect(){
-	while(!client.connected()){
-		Serial.println("Tentando se conectar ao broker MQTT");
-		if(client.connect("ESP32")){
-			Serial.println("Conectado ao server");
-			delay(2000);
-		}
-		else{
-			Serial.print("Falha na conexao, rc=");	
-			Serial.println(client.state());
-			Serial.println("Tentando novamente em 5 sec...");
-			delay(5000);
-		}
-	}
-}
