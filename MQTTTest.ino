@@ -1,8 +1,8 @@
 #include <WiFi.h>
 #include <PubSubClient.h>
 
-const char *ssid = "MultilaserPRO_ZTE_2.4G_TDEDEd";
-const char *password = "PSRMFKfR";
+const char *ssid = "";
+const char *password = "";
 
 const char *mqttServer = "test.mosquitto.org";
 const int mqttPort = 1883;
